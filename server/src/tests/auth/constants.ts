@@ -4,16 +4,20 @@ import { UserInfo } from "../../auth/UserInfo";
 export const VALID_ID = "1";
 
 export const TEST_USER: UserInfo = {
-  id: "cl7qmjh4h0000tothyjqapgj5",
-  roles: ["User"],
-  username: "ofek",
+    id: "cl7qmjh4h0000tothyjqapgj5",
+    roles: ["User"],
+    username: "ofek",
 };
 export const SIGN_TOKEN = "SIGN_TOKEN";
 export const VALID_CREDENTIALS: Credentials = {
-  username: "Valid User",
-  password: "Valid User Password",
+    username: "Valid User",
+    password: "Valid User Password",
+    email: "Valid Email",
+    name: "Valid Name",
 };
 export const INVALID_CREDENTIALS: Credentials = {
-  username: "Invalid User",
-  password: "Invalid User Password",
+    username: "Invalid User",
+    password: "Invalid User Password",
+    email: "Invalid Email",
+    name: "Invalid Name",
 };
