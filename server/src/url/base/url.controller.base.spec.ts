@@ -20,6 +20,7 @@ const nonExistingId = "nonExistingId";
 const existingId = "existingId";
 const CREATE_INPUT = {
   click: 42,
+  count: 42,
   createdAt: new Date(),
   id: "exampleId",
   originalUrl: "exampleOriginalUrl",
@@ -28,6 +29,7 @@ const CREATE_INPUT = {
 };
 const CREATE_RESULT = {
   click: 42,
+  count: 42,
   createdAt: new Date(),
   id: "exampleId",
   originalUrl: "exampleOriginalUrl",
@@ -37,6 +39,7 @@ const CREATE_RESULT = {
 const FIND_MANY_RESULT = [
   {
     click: 42,
+    count: 42,
     createdAt: new Date(),
     id: "exampleId",
     originalUrl: "exampleOriginalUrl",
@@ -46,6 +49,7 @@ const FIND_MANY_RESULT = [
 ];
 const FIND_ONE_RESULT = {
   click: 42,
+  count: 42,
   createdAt: new Date(),
   id: "exampleId",
   originalUrl: "exampleOriginalUrl",

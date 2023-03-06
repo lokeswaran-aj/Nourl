@@ -30,6 +30,17 @@ class UrlUpdateInput {
 
   @ApiProperty({
     required: false,
+    type: Number,
+  })
+  @IsInt()
+  @IsOptional()
+  @Field(() => Number, {
+    nullable: true,
+  })
+  count?: number;
+
+  @ApiProperty({
+    required: false,
     type: String,
   })
   @IsString()

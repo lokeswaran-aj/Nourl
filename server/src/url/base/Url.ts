@@ -36,6 +36,14 @@ class Url {
 
   @ApiProperty({
     required: true,
+    type: Number,
+  })
+  @IsInt()
+  @Field(() => Number)
+  count!: number;
+
+  @ApiProperty({
+    required: true,
   })
   @IsDate()
   @Type(() => Date)

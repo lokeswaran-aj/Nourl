@@ -221,6 +221,7 @@ export class UserControllerBase {
       ...query,
       select: {
         click: true,
+        count: true,
         createdAt: true,
         id: true,
         originalUrl: true,
