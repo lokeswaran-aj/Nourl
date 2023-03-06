@@ -21,6 +21,7 @@ model User {
 
 model Url {
   click       Int?
+  count       Int      @unique
   createdAt   DateTime @default(now())
   id          String   @id @default(uuid())
   originalUrl String

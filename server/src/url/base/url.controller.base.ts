@@ -21,6 +21,7 @@ import * as defaultAuthGuard from "../../auth/defaultAuth.guard";
 import { UrlService } from "../url.service";
 import { AclValidateRequestInterceptor } from "../../interceptors/aclValidateRequest.interceptor";
 import { AclFilterResponseInterceptor } from "../../interceptors/aclFilterResponse.interceptor";
+import { Public } from "../../decorators/public.decorator";
 import { UrlCreateInput } from "./UrlCreateInput";
 import { UrlWhereInput } from "./UrlWhereInput";
 import { UrlWhereUniqueInput } from "./UrlWhereUniqueInput";
@@ -57,6 +58,7 @@ export class UrlControllerBase {
       },
       select: {
         click: true,
+        count: true,
         createdAt: true,
         id: true,
         originalUrl: true,
@@ -90,6 +92,7 @@ export class UrlControllerBase {
       ...args,
       select: {
         click: true,
+        count: true,
         createdAt: true,
         id: true,
         originalUrl: true,
@@ -105,15 +108,10 @@ export class UrlControllerBase {
     });
   }
 
-  @common.UseInterceptors(AclFilterResponseInterceptor)
+  @Public()
   @common.Get("/:id")
   @swagger.ApiOkResponse({ type: Url })
   @swagger.ApiNotFoundResponse({ type: errors.NotFoundException })
-  @nestAccessControl.UseRoles({
-    resource: "Url",
-    action: "read",
-    possession: "own",
-  })
   @swagger.ApiForbiddenResponse({
     type: errors.ForbiddenException,
   })
@@ -124,6 +122,7 @@ export class UrlControllerBase {
       where: params,
       select: {
         click: true,
+        count: true,
         createdAt: true,
         id: true,
         originalUrl: true,
@@ -173,6 +172,7 @@ export class UrlControllerBase {
         },
         select: {
           click: true,
+          count: true,
           createdAt: true,
           id: true,
           originalUrl: true,
@@ -215,6 +215,7 @@ export class UrlControllerBase {
         where: params,
         select: {
           click: true,
+          count: true,
           createdAt: true,
           id: true,
           originalUrl: true,

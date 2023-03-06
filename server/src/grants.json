@@ -1,8 +1,20 @@
 [
   {
+    "role": "customer",
+    "resource": "User",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
     "role": "user",
     "resource": "User",
     "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "customer",
+    "resource": "User",
+    "action": "create:any",
     "attributes": "*"
   },
   {
@@ -12,7 +24,7 @@
     "attributes": "*"
   },
   {
-    "role": "user",
+    "role": "customer",
     "resource": "User",
     "action": "update:any",
     "attributes": "*"
@@ -20,7 +32,25 @@
   {
     "role": "user",
     "resource": "User",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "customer",
+    "resource": "User",
     "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "User",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "customer",
+    "resource": "User",
+    "action": "read:any",
     "attributes": "*"
   },
   {
@@ -30,9 +60,9 @@
     "attributes": "*"
   },
   {
-    "role": "user",
+    "role": "customer",
     "resource": "Url",
-    "action": "read:own",
+    "action": "create:any",
     "attributes": "*"
   },
   {
@@ -42,7 +72,7 @@
     "attributes": "*"
   },
   {
-    "role": "user",
+    "role": "customer",
     "resource": "Url",
     "action": "update:any",
     "attributes": "*"
@@ -50,7 +80,25 @@
   {
     "role": "user",
     "resource": "Url",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "customer",
+    "resource": "Url",
     "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Url",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "customer",
+    "resource": "Url",
+    "action": "read:any",
     "attributes": "*"
   },
   {

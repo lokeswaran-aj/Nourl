@@ -14,6 +14,7 @@ export const UrlShow = (props: ShowProps): React.ReactElement => {
     <Show {...props}>
       <SimpleShowLayout>
         <TextField label="Click" source="click" />
+        <TextField label="count" source="count" />
         <DateField source="createdAt" label="Created At" />
         <TextField label="ID" source="id" />
         <TextField label="Original URL" source="originalUrl" />

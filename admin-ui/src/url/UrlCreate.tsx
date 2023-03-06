@@ -17,6 +17,7 @@ export const UrlCreate = (props: CreateProps): React.ReactElement => {
     <Create {...props}>
       <SimpleForm>
         <NumberInput step={1} label="Click" source="click" />
+        <NumberInput step={1} label="count" source="count" />
         <TextInput label="Original URL" source="originalUrl" />
         <TextInput label="Short URL" source="shortUrl" />
         <ReferenceInput source="user.id" reference="User" label="User">
